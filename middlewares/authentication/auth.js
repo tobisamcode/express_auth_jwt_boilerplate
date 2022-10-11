@@ -5,6 +5,8 @@ const UserModel = require("../../models/users");
 const JWTstrategy = require("passport-jwt").Strategy;
 const ExtractJWT = require("passport-jwt").ExtractJwt;
 
+// A middleware to handle decryption to check the secret token
+
 passport.use(
   new JWTstrategy(
     {
